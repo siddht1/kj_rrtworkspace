@@ -1,0 +1,49 @@
+// create angular app
+	var rApp = angular.module('registerApp', []);
+	// create angular controller
+	rApp.controller('registerCtrl', function($scope) {
+
+		// function to submit the form after all validation has occurred			
+		$scope.submitForm = function() {
+
+			// check to make sure the form is completely valid
+			if ($scope.userForm.$valid) {
+				alert('our form is amazing');
+			}
+
+		};
+			});
+
+	validationApp.directive('pwCheck', [function () {
+    return {
+      require: 'ngModel',
+      link: function (scope, elem, attrs, ctrl) {
+        var firstPassword = '#' + attrs.pwCheck;
+        elem.add(firstPassword).on('keyup', function () {
+          scope.$apply(function () {
+            var v = elem.val()===$(firstPassword).val();
+            ctrl.$setValidity('pwmatch', v);
+          });
+        });
+      }
+    }
+  }]);  
+
+
+var app = angular.module('loginApp', []);
+app.controller('loginCtrl', function($scope) {
+      // function to submit the form after all validation has occurred      
+    $scope.submitForm = function() {
+
+      // check to make sure the form is completely valid
+     if ($scope.loginForm.$valid) {
+        alert('our form is amazing');
+      }   
+
+    };
+});
+
+
+
+
+
