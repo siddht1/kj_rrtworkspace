@@ -1,0 +1,46 @@
+CREATE TABLE userData (
+	id PRIMARY KEY IDENTITY
+	,Firstname VARCHAR(10)
+	,LastName VARCHAR(10)
+	,ImageLoc NVARCHAR(50)
+	,Telephone number(10)
+	,EmailID NVARCHAR(20)
+	,Password NVARCHAR(8)
+	,CreatedOn sysdate
+	,guid NVARCHAR(20)
+	,RoleID INT
+	)
+
+CREATE TABLE address (
+	AddressID INT PRIMARY KEY
+	,address VARCHAR(50)
+	)
+
+CREATE TABLE ROLE (
+	roleID INT PRIMARY KEY
+	,roleName VARCHAR(10)
+	)
+
+INSERT INTO ROLE
+VALUES (
+	1
+	,'Executive'
+	)
+
+INSERT INTO ROLE
+VALUES (
+	2
+	,'Manager'
+	)
+
+INSERT INTO ROLE
+VALUES (
+	3
+	,'Senior Manager'
+	)
+
+INSERT INTO ROLE
+VALUES (
+	4
+	,'Admin'
+	)
