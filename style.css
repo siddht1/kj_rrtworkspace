@@ -108,7 +108,8 @@ table {
 body {
   font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #404040;
-  background: #2d4259;
+  /*background: #2d4259; */
+  background: white;
 }
 
 .register-title {
@@ -161,7 +162,7 @@ input {
   border-bottom: 1px solid #d8d8d8;
 }
 .register-input:focus {
-  border-color: #1e9ce6;
+ border-color: #1e9ce6;
   outline: 0;
 }
 
@@ -207,10 +208,14 @@ input {
   padding: 4px;
   background: #808080;
   border-radius: 2px;
-  background-image: -webkit-linear-gradient(top, #60a83a, #7dbe52);
+ /* background-image: -webkit-linear-gradient(top, #60a83a, #7dbe52);
   background-image: -moz-linear-gradient(top, #60a83a, #7dbe52);
   background-image: -o-linear-gradient(top, #60a83a, #7dbe52);
-  background-image: linear-gradient(to bottom, #60a83a, #7dbe52);
+  background-image: linear-gradient(to bottom, #60a83a, #7dbe52); */
+   background-image: -webkit-linear-gradient(top,  #799a9f,  rgb(64, 111, 118));
+  background-image: -moz-linear-gradient(top,  #799a9f,  rgb(64, 111, 118));
+  background-image: -o-linear-gradient(top,  #799a9f,  rgb(64, 111, 118));
+  background-image: linear-gradient(to bottom,#799a9f,   rgb(64, 111, 118));
   -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
 }

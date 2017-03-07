@@ -45,13 +45,15 @@ a.hiddenanchor{
 
 /**** general text styling ****/
 #wrapper a{
-	color: rgb(95, 155, 198);
+	/*color: rgb(95, 155, 198); */
+	color:#ff6600;
 	text-decoration: underline;
 }
 
 #wrapper h1{
 	font-size: 48px;
-	color: rgb(6, 106, 117);
+	/*color: rgb(6, 106, 117); */
+		color:#ff6600;
 	padding: 2px 0 10px 0;
 	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
 	font-weight: bold;
@@ -371,7 +373,8 @@ p.change_link{
 	padding: 0;
 }
 .lt8 #wrapper h1{
-	color: #066A75;
+/*	color: #066A75; */
+color: #ff6600;
 }
 .lt8 #register{	
 	display: none;

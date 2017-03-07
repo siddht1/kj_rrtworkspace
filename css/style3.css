@@ -45,13 +45,14 @@ a.hiddenanchor{
 
 /**** general text styling ****/
 #wrapper a{
-	color: rgb(95, 155, 198);
+	color: rgb(95, 155, 198); 
 	text-decoration: underline;
 }
 
 #wrapper h1{
 	font-size: 48px;
-	color: rgb(6, 106, 117);
+	/*color: rgb(6, 106, 117); */
+	color:#ff6600;
 	padding: 2px 0 10px 0;
 	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
 	font-weight: bold;
@@ -65,7 +66,8 @@ a.hiddenanchor{
 	rgb(18, 83, 93) 20px, 
 	rgb(64, 111, 118) 20px, 
 	rgb(64, 111, 118) 40px, 
-	rgb(18, 83, 93) 40px);
+	rgb(18, 83, 93) 40px); 
+	
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
