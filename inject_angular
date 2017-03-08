@@ -1,0 +1,31 @@
+1) method 1 
+var app = angular.module('loginApp', []);
+app.controller('loginCtrl', function($scope) {
+   
+    $scope.email = 'true@true';
+    $scope.pass='true';
+});
+
+2) method 2 
+
+	rApp.controller('registerCtrl', function($scope) 
+	{
+
+			
+		$scope.submitForm = function() 
+    {
+        $valid=true;// overiding valid to true 
+        $scope=global;  // making scope global
+			
+			if ($scope.userForm.$valid) 
+      {
+				alert('our form is amazing');
+			}
+
+		};
+			});
+      
+      
+      
+      
+ 3) 
