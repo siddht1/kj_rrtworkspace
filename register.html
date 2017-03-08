@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+  <script>
+      var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false")
+   </script>
    <head>
       <meta charset="UTF-8" />
       <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -102,11 +106,11 @@
                         </p>
                         <p>
                            <label for="pwd" data-icon="p">Your password </label>
-                           <input type="password" name="pwd" placeholder="Enter password" ng-model="pwd" ng-maxlength="8" ng-minlength="5" required>
+                           <input type="password" name="pwd" placeholder="Enter password" ng-model="pwd" ng-maxlength="16" ng-minlength="6" required>
                            <span style="color:red" ng-show="userForm.pwd.$invalid && userForm.pwd.$dirty" >
                            <span ng-show="userForm.pwd.$error.required">Password is required.</span>
-                           <span ng-show="userForm.pwd.$error.minlength">Password is too short! Atelast 5 characters required.</span>
-                           <span ng-show="userForm.pwd.$error.maxlength">Password is too long! Maximum length is 8.</span>
+                           <span ng-show="userForm.pwd.$error.minlength">Password is too short! Atelast 6 characters required.</span>
+                           <span ng-show="userForm.pwd.$error.maxlength">Password is too long! Maximum length is 16.</span>
                            </span>
                         </p>
                         <p> 
