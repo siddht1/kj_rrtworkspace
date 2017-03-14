@@ -22,7 +22,7 @@ app.controller('loginCtrl', function($scope) {
 
       // check to make sure the form is completely valid
      if ($scope.loginForm.$valid) {
-        alert('our form is amazing');
+       window.location = "http://subb.epizy.com/codiad/";
       }   
 
     };
