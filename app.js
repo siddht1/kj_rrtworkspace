@@ -8,7 +8,8 @@
 
 			// check to make sure the form is completely valid
 			if ($scope.userForm.$valid) {
-				alert('our form is amazing');
+				window.location = "http://subb.epizy.com/codiad/";
+				
 			}
 
 		};
